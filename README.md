@@ -8,4 +8,4 @@ Update:
 - add category controller
 - add dto 
 - exception
-- deneme
+- fixed exception

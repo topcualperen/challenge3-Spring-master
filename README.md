@@ -8,5 +8,4 @@ Update:
 - add category controller
 - add dto 
 - exception
-- Yeni commit message!!!
-newwwww
+- deneme

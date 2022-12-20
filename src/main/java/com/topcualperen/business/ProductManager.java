@@ -48,7 +48,7 @@ public class ProductManager implements ProductService{
 //            return product.get(); Entity den aldığımız ve ürünleri döndüğümüz işlem
             return modelMapper.map(product.get(), ProductDto.class);
         }
-        throw new ProductNotFoundException("Not found !!!");
+        throw new ProductNotFoundException("Product Not Found !!!");
     }
 
     @Override
@@ -62,7 +62,7 @@ public class ProductManager implements ProductService{
 //            updateProductt.get().setQuantityPerUnit(product.getQuantityPerUnit());
             return modelMapper.map(productDao.save(updateProductt.get()), ProductDto.class);
         }
-        throw new ProductNotFoundException("Not update !!!");
+        throw new ProductNotFoundException("Product Not Update !!!");
     }
 
 
@@ -71,7 +71,7 @@ public class ProductManager implements ProductService{
         if (product.isPresent()) {
             productDao.deleteById(id);
         } else{
-            throw new ProductNotFoundException("Not Delete !!!");
+            throw new ProductNotFoundException("Product Not Delete !!!");
         }
     }
 

@@ -31,4 +31,6 @@ public class User {
     @NotBlank(message = "Password may not be blank")
     private String password;
 
+    private String userName;
+
 }
